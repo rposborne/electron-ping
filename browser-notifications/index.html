@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            Notification.requestPermission().then((e) => {
+                    console.log(e);
+                    notification = new Notification("Ping!")
+                    console.log(e);
+                }).catch((e) => {
+
+                    console.log("in catch", e);
+                })
+        </script>
+    </head>
+    <body>
+        <p>
+            Ping
+        </p>
+    </body>
+</html>
